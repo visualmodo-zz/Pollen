@@ -1,0 +1,98 @@
+/*-----------------------------------------------------------------------------------*/
+/*  *.  Component - List Group
+/*-----------------------------------------------------------------------------------*/
+
+.pollen-list-group {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  &.pollen-direction-vertical {
+    &.pollen-separator-lines .pollen-list-group-item {
+      border-bottom: 1px solid #eee;
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+    &.pollen-borders-separator-lines {
+      border: 1px solid #eee;
+      .pollen-list-group-item {
+        border-bottom: 1px solid #eee;
+        background-color: #fff;
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+  &.pollen-direction-horizontal.pollen-borders-separator-lines .pollen-list-group-item {
+    border: 1px solid #eee;
+    background-color: #fff;
+    margin-right: -1px;
+  }
+  &.pollen-direction-vertical.pollen-borders-rounded-corners-separator-lines {
+    border: 1px solid #eee;
+    border-radius: .25rem;
+    .pollen-list-group-item {
+      border-bottom: 1px solid #eee;
+      background-color: #fff;
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+  &.pollen-direction-horizontal {
+    &.pollen-borders-rounded-corners-separator-lines .pollen-list-group-item {
+      border: 1px solid #eee;
+      background-color: #fff;
+      margin-right: -1px;
+      &:first-child {
+        border-top-left-radius: .25rem;
+        border-bottom-left-radius: .25rem;
+      }
+      &:last-child {
+        border-top-right-radius: .25rem;
+        border-bottom-right-radius: .25rem;
+      }
+    }
+    flex-direction: row;
+    max-width: 100%;
+  }
+}
+
+.pollen-align-left {
+  justify-content: flex-start;
+}
+
+.pollen-align-right {
+  justify-content: flex-end;
+}
+
+.pollen-align-center {
+  justify-content: center;
+}
+
+.pollen-list-group {
+  .pollen-list-group-item i {
+    padding-right: .75rem;
+  }
+  &.pollen-list-group-item-text .pollen-list-group-item {
+    cursor: default;
+  }
+  &.pollen-list-group-item-link .pollen-list-group-item {
+    cursor: pointer;
+    &:hover {
+      background-color: #f8f9fa;
+    }
+    &:active {
+      background-color: #e9ecef;
+    }
+  }
+  .pollen-list-group-item {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    text-decoration: none;
+    color: #212529;
+  }
+}

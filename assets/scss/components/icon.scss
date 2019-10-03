@@ -1,0 +1,32 @@
+/*-----------------------------------------------------------------------------------*/
+/*  *.  Component - Icon
+/*-----------------------------------------------------------------------------------*/
+
+.background-shape {
+    line-height: 0;
+    .single-icon {
+      &.outline-round, &.outline-square, &.outline-rounded {
+        border-width: 2px;
+        border-style: solid;
+      }
+      &.round, &.outline-round {
+        border-radius: 100%;
+      }
+      &.rounded, &.outline-rounded {
+        border-radius: 4px;
+      }
+      display: inline-block;
+      position: relative;
+      box-sizing: content-box;
+      i {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    }
+  }

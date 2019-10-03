@@ -1,0 +1,42 @@
+/*-----------------------------------------------------------------------------------*/
+/*  *.  Component - Semi Circular Progress Bar
+/*-----------------------------------------------------------------------------------*/
+
+.pollen-semi-circular-progress-bar .pollen-semi-circular-progress-bar-inner {
+  margin: 20px;
+  width: 200px;
+  height: 100px;
+  position: relative;
+  .pollen-semi-circular-progress-bar-params.round svg {
+    stroke-linecap: round;
+  }
+  .pollen-semi-circular-progress-bar-title {
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .pollen-semi-circular-progress-bar-params {
+    .progressbar-text {
+      line-height: 100px;
+      height: 80%;
+      width: 200px;
+      text-align: center;
+      font-size: 2rem;
+      transform: translate(0) !important;
+    }
+    &.icon .progressbar-text {
+      display: none;
+    }
+  }
+  .pollen-semi-circular-progress-bar-icon {
+    position: absolute;
+    top: 0;
+    height: auto;
+    width: 200px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 10%;
+  }
+}

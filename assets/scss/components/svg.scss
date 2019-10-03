@@ -1,0 +1,18 @@
+/*-----------------------------------------------------------------------------------*/
+/*  *.  Component - SVG
+/*-----------------------------------------------------------------------------------*/
+
+.pollen-svg {
+  &.pollen-svg-align-left {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &.pollen-svg-align-right {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &.pollen-svg-align-center {
+    display: flex;
+    justify-content: center;
+  }
+}

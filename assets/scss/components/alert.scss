@@ -1,0 +1,33 @@
+/*-----------------------------------------------------------------------------------*/
+/*  *.  Component - Alert
+/*-----------------------------------------------------------------------------------*/
+
+.pollen-alert {
+  padding: 20px;
+  color: white;
+  &.pollen-alert-success {
+    background-color: #4CAF50;
+  }
+  &.pollen-alert-info {
+    background-color: #2196F3;
+  }
+  &.pollen-alert-warning {
+    background-color: #ff9800;
+  }
+  &.pollen-alert-danger {
+    background-color: #f44336;
+  }
+  .pollen-alert-close-button {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      color: black;
+    }
+  }
+}

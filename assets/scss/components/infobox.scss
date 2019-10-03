@@ -1,0 +1,53 @@
+/*-----------------------------------------------------------------------------------*/
+/*  *.  Infobox 
+/*-----------------------------------------------------------------------------------*/
+
+.pollen-infobox {
+	display: flex;
+}
+
+.pollen-infobox .infobox-icon {
+	display: inline-table;
+}
+
+.pollen-infobox .infobox-icon img {
+	max-width: initial;
+}
+
+.pollen-infobox .icon-infobox {
+	line-height: 0;
+}
+
+.pollen-infobox .icon-infobox.outline-round,
+.pollen-infobox .icon-infobox.outline-square,
+.pollen-infobox .icon-infobox.outline-rounded {
+	border-width: 2px;
+	border-style: solid;
+}
+
+.pollen-infobox .icon-infobox.round,
+.pollen-infobox .icon-infobox.outline-round {
+	border-radius: 100%;
+}
+
+.pollen-infobox .icon-infobox.rounded,
+.pollen-infobox .icon-infobox.outline-rounded {
+	border-radius: 4px;
+}
+
+.pollen-infobox .icon-infobox {
+	display: inline-block;
+	position: relative;
+	box-sizing: content-box;
+}
+
+.pollen-infobox .icon-infobox .pollen-infobox-icon-item {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}

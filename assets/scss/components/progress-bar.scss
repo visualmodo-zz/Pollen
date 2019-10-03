@@ -1,0 +1,32 @@
+/*-----------------------------------------------------------------------------------*/
+/*  *.  Component - Progress Bar
+/*-----------------------------------------------------------------------------------*/
+
+.pollen-progress-bar {
+  display: flex;
+  align-items: center;
+  .pollen-progress-bar-inner {
+    width: 100%;
+  }
+  .pollen-progress-bar-icon {
+    margin-right: 16px;
+    font-size: 32px;
+  }
+  .pollen-progress-bar-inner {
+    #pollenProgressBar {
+      width: 100%;
+      height: 16px;
+      position: relative;
+    }
+    svg {
+      display: block;
+      margin-top: 8px;
+    }
+    .progress-bar-rounded svg {
+      border-radius: 3px;
+    }
+    .progress-bar-round svg {
+      border-radius: 100px;
+    }
+  }
+}

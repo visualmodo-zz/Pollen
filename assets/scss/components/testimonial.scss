@@ -1,0 +1,45 @@
+/*-----------------------------------------------------------------------------------*/
+/*  *.  Component - Testimonial
+/*-----------------------------------------------------------------------------------*/
+
+.pollen-testimonial {
+  .testimonial-quote {
+    &:before {
+      content: "“";
+    }
+    &:after {
+      content: "”";
+    }
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0 auto 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #2D3C48;
+  }
+  .testimonial-photo {
+    margin-right: 30px;
+  }
+  .testimonial-title, .testimonial-occupation {
+    display: block;
+  }
+  .testimonial-title {
+    font-weight: 700;
+  }
+  .testimonial-occupation {
+    color: #ccc;
+  }
+  .testimonial-photo img {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+  }
+  .testimonial-photo-title-occupation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-carousel .carousel-cell {
+    width: 100%;
+  }
+}
